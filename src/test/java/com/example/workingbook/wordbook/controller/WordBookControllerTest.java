@@ -114,7 +114,8 @@ public class WordBookControllerTest {
     @Test
     void 컨트롤러_단어장_수정_테스트() throws Exception {
         //given
-        long wordBookId = 1L;
+        Long wordBookId = 1L;
+
         WordBookDto.Patch patch = WordBookDto.Patch.builder()
                 .title("단어장")
                 .accessRange(0)
@@ -136,7 +137,7 @@ public class WordBookControllerTest {
 
         //when
         ResultActions actions = mockMvc.perform(
-                patch("/wordbooks/{wordbook-id}", wordBookId)
+                patch("/wordbooks/{wordbook-id}", wordBookId) // path variable이 여러 개 인경우 순서대로 매핑된다.
                         .accept(MediaType.APPLICATION_JSON) // 응답 타입 설정
                         .contentType(MediaType.APPLICATION_JSON)
                         .content(json)

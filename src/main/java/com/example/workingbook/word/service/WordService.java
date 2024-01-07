@@ -47,6 +47,7 @@ public class WordService {
         wordRepository.delete(findWord);
     }
 
+    // todo 쿼리 어떻게 날라가는지 꼭 확인하기
     public void deleteWords(Long wordBookId) {
         List<Word> words = findWords(wordBookId);
         wordRepository.deleteAll(words);

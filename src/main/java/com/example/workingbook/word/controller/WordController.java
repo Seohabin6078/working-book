@@ -59,6 +59,7 @@ public class WordController {
         return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
+    // 단어장은 남기고 안에 있는 단어만 모두 삭제하는 경우
     @DeleteMapping("/{wordbook-id}/words")
     public ResponseEntity<Void> deleteWords(@PathVariable("wordbook-id") @Positive Long wordBookId) {
         wordService.deleteWords(wordBookId);

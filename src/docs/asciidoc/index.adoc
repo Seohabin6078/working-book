@@ -53,3 +53,68 @@ include::{snippets}/delete-wordbook/path-parameters.adoc[]
 
 .응답 예시
 include::{snippets}/delete-wordbook/http-response.adoc[]
+
+
+== WordController
+=== 단어 등록
+.요청 예시
+include::{snippets}/post-word/http-request.adoc[]
+
+.요청 본문
+include::{snippets}/post-word/request-fields.adoc[]
+
+.응답 예시
+include::{snippets}/post-word/http-response.adoc[]
+
+
+=== 단어 수정
+.요청 예시
+include::{snippets}/patch-word/http-request.adoc[]
+
+include::{snippets}/patch-word/path-parameters.adoc[]
+
+.요청 본문
+include::{snippets}/patch-word/request-fields.adoc[]
+
+.응답 예시
+include::{snippets}/patch-word/http-response.adoc[]
+
+
+=== 단어 조회
+.요청 예시
+include::{snippets}/get-words/http-request.adoc[]
+
+include::{snippets}/get-words/path-parameters.adoc[]
+
+.응답 예시
+include::{snippets}/get-words/http-response.adoc[]
+
+
+=== 단어 한개 조회
+.요청 예시
+include::{snippets}/get-word/http-request.adoc[]
+
+include::{snippets}/get-word/path-parameters.adoc[]
+
+.응답 예시
+include::{snippets}/get-word/http-response.adoc[]
+
+
+=== 단어 삭제
+.요청 예시
+include::{snippets}/delete-word/http-request.adoc[]
+
+include::{snippets}/delete-word/path-parameters.adoc[]
+
+.응답 예시
+include::{snippets}/delete-word/http-response.adoc[]
+
+
+=== 단어장 내 모든 단어 삭제
+.요청 예시
+include::{snippets}/delete-words/http-request.adoc[]
+
+include::{snippets}/delete-words/path-parameters.adoc[]
+
+.응답 예시
+include::{snippets}/delete-words/http-response.adoc[]
