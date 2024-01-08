@@ -13,7 +13,6 @@ import lombok.*;
 public class Word extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "word_id")
     private Long wordId;
 
     @Column(nullable = false)

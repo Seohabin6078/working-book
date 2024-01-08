@@ -12,14 +12,13 @@ import lombok.*;
 public class WordBook extends Auditable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "word_book_id")
     private Long wordBookId;
 
     @Column(nullable = false)
     private String title;
 
     // 0 = 비공개, 1 = 공유, 2 = 공개
-    @Column(name = "access_range", nullable = false)
+    @Column(nullable = false)
     private Integer accessRange;
 
     public void changeTitle(String title) {
