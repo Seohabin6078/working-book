@@ -38,6 +38,7 @@ dependencies {
     implementation 'com.google.code.gson:gson'
 //    implementation 'io.springfox:springfox-boot-starter:3.0.0'
 
+    implementation 'com.mysql:mysql-connector-j'
     testImplementation 'org.springframework.restdocs:spring-restdocs-mockmvc'
     asciidoctorExtensions 'org.springframework.restdocs:spring-restdocs-asciidoctor'
 }
