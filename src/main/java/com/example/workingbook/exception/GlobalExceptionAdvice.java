@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.HttpRequestMethodNotSupportedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.MissingRequestHeaderException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
@@ -27,6 +28,12 @@ public class GlobalExceptionAdvice {
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public ErrorResponse.ConstraintViolations handleConstraintViolationException(ConstraintViolationException e) {
         return ErrorResponse.ConstraintViolations.of(e.getConstraintViolations());
+    }
+
+    @ExceptionHandler
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ErrorResponse.Basic handleMissingRequestHeaderException(MissingRequestHeaderException e) {
+        return ErrorResponse.Basic.of(HttpStatus.BAD_REQUEST, e.getMessage());
     }
 
     @ExceptionHandler
