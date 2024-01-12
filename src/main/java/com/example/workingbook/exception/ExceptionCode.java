@@ -20,7 +20,10 @@ public enum ExceptionCode {
 //    COMMENT_NOT_FOUND(404, "Comment is not found");
 
     WORD_BOOK_NOT_FOUND(404, "WordBook is not found"),
-    WORD_NOT_FOUND(404, "Word is not found");
+    WORD_NOT_FOUND(404, "Word is not found"),
+    REQUEST_NO_DEVICE_ID(400, "Request no device id"),
+    DEVICE_NOT_FOUND(404, "Device is not found"),
+    NO_AUTH_FOR_WORDBOOK(403, "No authority for wordBook");
 
     private final int status;
     private final String message;

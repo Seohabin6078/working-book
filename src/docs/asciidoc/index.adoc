@@ -15,6 +15,9 @@ Seo habin <habin6078@gmail.com>
 .요청 예시
 include::{snippets}/post-wordbook/http-request.adoc[]
 
+.요청 헤더
+include::{snippets}/post-wordbook/request-headers.adoc[]
+
 .요청 본문
 include::{snippets}/post-wordbook/request-fields.adoc[]
 
@@ -27,6 +30,9 @@ include::{snippets}/post-wordbook/http-response.adoc[]
 include::{snippets}/patch-wordbook/http-request.adoc[]
 
 include::{snippets}/patch-wordbook/path-parameters.adoc[]
+
+.요청 헤더
+include::{snippets}/patch-wordbook/request-headers.adoc[]
 
 .요청 본문
 include::{snippets}/patch-wordbook/request-fields.adoc[]
@@ -41,6 +47,9 @@ include::{snippets}/get-wordbook/http-request.adoc[]
 
 include::{snippets}/get-wordbook/path-parameters.adoc[]
 
+.요청 헤더
+include::{snippets}/get-wordbook/request-headers.adoc[]
+
 .응답 예시
 include::{snippets}/get-wordbook/http-response.adoc[]
 
@@ -50,6 +59,9 @@ include::{snippets}/get-wordbook/http-response.adoc[]
 include::{snippets}/delete-wordbook/http-request.adoc[]
 
 include::{snippets}/delete-wordbook/path-parameters.adoc[]
+
+.요청 헤더
+include::{snippets}/delete-wordbook/request-headers.adoc[]
 
 .응답 예시
 include::{snippets}/delete-wordbook/http-response.adoc[]
@@ -118,3 +130,15 @@ include::{snippets}/delete-words/path-parameters.adoc[]
 
 .응답 예시
 include::{snippets}/delete-words/http-response.adoc[]
+
+
+== DeviceController
+=== 기기 등록
+.요청 예시
+include::{snippets}/post-device/http-request.adoc[]
+
+.요청 본문
+include::{snippets}/post-device/request-fields.adoc[]
+
+.응답 예시
+include::{snippets}/post-device/http-response.adoc[]
